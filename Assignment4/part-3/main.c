@@ -110,5 +110,5 @@ int main(int argc, char **argv)
      }
 
   free(threads);
-  //dump_hash_table(h);
+  dump_hash_table(h);
 }

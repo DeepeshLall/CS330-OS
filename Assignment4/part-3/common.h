@@ -69,11 +69,6 @@ static void init_hashtable(hash_t *h, unsigned size)
     h->table_size = size;
     h->table = (hash_entry_t *)malloc(size * sizeof(hash_entry_t));
     memset((void *)h->table, 0, size * sizeof(hash_entry_t));
-    /*
-    for(unsigned i = 0; i < size; i++) {
-        pthread_mutex_init(&(h->table+i)->lock, NULL);
-    }
-    */
     return;
 }
 
